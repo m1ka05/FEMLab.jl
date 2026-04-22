@@ -1,7 +1,8 @@
 # FEMLab.jl
 
-Starter pack for students new to Julia who are using it to solve FEM assignments.
+![alt text](examples/airfoil_mesh.png)
 
+_`FEMLab.jl` → A starter pack for students who are new to Julia and want to use it to solve FEM assignments._
 
 ## Setup
 
@@ -81,3 +82,5 @@ You can read up on the reason why `REPL.softscope` is necessary in this context
 Links to the documentation of Julia and the packages reexported by FEMLab are in `src/FEMLab.jl`.
 The output files (`*.vtu`,`*.vts`,...) can be opened in [Paraview](https://www.paraview.org/).
 The included packages are sufficient for the solution of all course assignments.
+
+The repository structure can be used as a starting point for your own package. If you wish you can also just keep working inside the `FEMLab.jl` directory.
