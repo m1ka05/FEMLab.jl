@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="208" viewBox="0 0 760 208" role="img" aria-label="terminal listing">
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; font-size: 14px; fill: #e6edf3; }
+  </style>
+  <rect x="0.5" y="0.5" width="759" height="207" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="16" y="28">
+    <tspan fill="#2472C8" font-weight="700">(@v1.12) pkg&gt;</tspan>
+    <tspan> activate .</tspan>
+  </text>
+  <text x="16" y="48">
+    <tspan fill="#0DBC79" font-weight="700">  Activating</tspan>
+    <tspan> project at `/scratch/mika/FEMLab.jl`</tspan>
+  </text>
+  <text x="16" y="68">
+    <tspan></tspan>
+  </text>
+  <text x="16" y="88">
+    <tspan fill="#2472C8" font-weight="700">(FEMLab) pkg&gt;</tspan>
+    <tspan> add LinearAlgebra</tspan>
+  </text>
+  <text x="16" y="108">
+    <tspan fill="#0DBC79" font-weight="700">   Resolving</tspan>
+    <tspan> package versions...</tspan>
+  </text>
+  <text x="16" y="128">
+    <tspan fill="#0DBC79" font-weight="700">      Compat</tspan>
+    <tspan> entries added for LinearAlgebra</tspan>
+  </text>
+  <text x="16" y="148">
+    <tspan fill="#0DBC79" font-weight="700">    Updating</tspan>
+    <tspan> `/scratch/mika/FEMLab.jl/Project.toml`</tspan>
+  </text>
+  <text x="16" y="168">
+    <tspan>  </tspan>
+    <tspan fill="#666666">[37e2e46d]</tspan>
+    <tspan> </tspan>
+    <tspan fill="#23D18B">+ LinearAlgebra v1.12.0</tspan>
+  </text>
+  <text x="16" y="188">
+    <tspan fill="#11A8CD">    Manifest</tspan>
+    <tspan> No packages added to or removed from `/scratch/mika/FEMLab.jl/Manifest.toml`</tspan>
+  </text>
+</svg>

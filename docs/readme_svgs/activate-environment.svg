@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="108" viewBox="0 0 540 108" role="img" aria-label="terminal listing">
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; font-size: 14px; fill: #e6edf3; }
+  </style>
+  <rect x="0.5" y="0.5" width="539" height="107" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="16" y="28">
+    <tspan fill="#2472C8" font-weight="700">(@v1.12) pkg&gt;</tspan>
+    <tspan> activate .</tspan>
+  </text>
+  <text x="16" y="48">
+    <tspan fill="#0DBC79" font-weight="700">  Activating</tspan>
+    <tspan> project at `/scratch/user/FEMLab.jl`</tspan>
+  </text>
+  <text x="16" y="68">
+    <tspan></tspan>
+  </text>
+  <text x="16" y="88">
+    <tspan fill="#2472C8" font-weight="700">(FEMLab) pkg&gt;</tspan>
+  </text>
+</svg>

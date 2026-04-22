@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="68" viewBox="0 0 520 68" role="img" aria-label="terminal listing">
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; font-size: 14px; fill: #e6edf3; }
+  </style>
+  <rect x="0.5" y="0.5" width="519" height="67" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="16" y="28">
+    <tspan fill="#23D18B">julia&gt;</tspan>
+    <tspan> using REPL</tspan>
+  </text>
+  <text x="16" y="48">
+    <tspan fill="#23D18B">julia&gt;</tspan>
+    <tspan> include(REPL.softscope, "examples/airfoil_mesh.jl")</tspan>
+  </text>
+</svg>
