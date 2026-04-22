@@ -17,14 +17,36 @@ _`FEMLab.jl` → A starter pack for students who are new to Julia and want to us
 > Visual Studio Code may ask about installing [`Revise.jl`](https://github.com/timholy/Revise.jl).
 > `Revise.jl` allows you to modify code and use the changes without restarting Julia. This is quite useful.
 
+## REPL
+
 The `REPL` has five different prompt modes. The default mode (Julian, green) is where standard Julia expressions can be evaluated.
 The special modes can be activated by pressing: `]`,`?`, `;`, or `Ctrl+R`. The default mode is reactivated by removing all
 input or by pressing `Ctrl+C`.
 
-- Package mode (`]`, blue) allows for adding packages to the current environment
-- Help mode (`?`, yellow) can be used to print help and documentation for anything entered in help mode.
-- Shell mode (`;`, red) acts like a regular terminal
-- Search mode (`Ctrl+R`, white) allows for searching through the history of commands
+### Package mode
+Package mode (`]`) allows, among others, for adding packages to the current environment.
+<!--StartFragment-->
+<pre><div><div><span></span><span style='color: #2472c8; font-weight: bold;'>(@v1.12) pkg> </span><span>activate .                                                                                                                                                                                                          </span></div><div><span></span><span style='color: #0dbc79; font-weight: bold;'>  Activating</span><span> project at `/scratch/mika/FEMLab.jl`                                                                                                                                                                                 </span></div><div><span>                                                                                                                                                                                                                                  </span></div><div><span></span><span style='color: #2472c8; font-weight: bold;'>(FEMLab) pkg> </span><span>add LinearAlgebra                                                                                                                                                                                                   </span></div><div><span></span><span style='color: #0dbc79; font-weight: bold;'>   Resolving</span><span> package versions...                                                                                                                                                                                                  </span></div><div><span></span><span style='color: #0dbc79; font-weight: bold;'>      Compat</span><span> entries added for LinearAlgebra                                                                                                                                                                                      </span></div><div><span></span><span style='color: #0dbc79; font-weight: bold;'>    Updating</span><span> `/scratch/mika/FEMLab.jl/Project.toml`                                                                                                                                                                               </span></div><div><span>  </span><span style='color: #666666;'>[37e2e46d] </span><span style='color: #23d18b;'>+ LinearAlgebra v1.12.0</span><span>                                                                                                                                                                                              </span></div><div><span></span><span style='color: #11a8cd; font-weight: bold;'>    Manifest</span><span> No packages added to or removed from `/scratch/mika/FEMLab.jl/Manifest.toml`      </span></div></div></pre>
+<!--EndFragment-->
+
+### Help mode
+Help mode (`?`) can be used to print help and documentation for anything entered in help mode.
+<!--StartFragment-->
+<pre><div><div><span></span><span style='color: #e5e510; font-weight: bold;'>help?> </span><span>help                                                                                                                                                                                         </span></div><div><span>search: </span><span style='font-weight: bold;'>help</span><span> exp </span><span style='font-weight: bold;'>he</span><span>x                                                                                                                                                                                </span></div><div><span>                                                                                                                                                                                                    </span></div><div><span>  </span><span style='font-weight: bold;'>Welcome to Julia 1.12.6.</span><span> The full manual is available at                                                                                                                                          </span></div><div><span>                                                                                                                                                                                                    </span></div><div><span>  </span><span style='color: #11a8cd;'>https://docs.julialang.org</span><span>                                                                                                                                                                        </span></div><div><span>                                                                                                                                                                                                    </span></div><div><span>  as well as many great tutorials and learning resources:                                                                                                                                           </span></div><div><span>                                                                                                                                                                                                    </span></div><div><span>  </span><span style='color: #11a8cd;'>https://julialang.org/learning/</span><span>                                                                                                                                                                   </span></div><div><span>                                                                                                                                                                                                    </span></div><div><span>  For help on a specific function or macro, type </span><span style='color: #11a8cd;'>?</span><span> followed by its name, e.g. </span><span style='color: #11a8cd;'>?cos</span><span>, or </span><span style='color: #11a8cd;'>?@time</span><span>, and press enter. Type </span><span style='color: #11a8cd;'>;</span><span> to enter shell mode, </span><span style='color: #11a8cd;'>]</span><span> to enter package mode.                                </span></div><div><span>                                                                                                                                                                                                    </span></div><div><span>  To exit the interactive session, type </span><span style='color: #11a8cd;'>CTRL-D</span><span> (press the control key together with the </span><span style='color: #11a8cd;'>d</span><span> key), or type </span><span style='color: #11a8cd;'>exit()</span><span>.    </span></div></div></pre>
+<!--EndFragment-->
+
+### Shell mode
+Shell mode (`;`) acts like a simple system shell.
+<!--StartFragment-->
+<pre><div><div><span></span><span style='color: #cd3131; font-weight: bold;'>shell> </span><span>ls                                                                                                                                                                                           </span></div><div><span>examples  LICENSE  Manifest.toml  noshare  Project.toml  README.md  repl.html  results  src  tests </span></div></div></pre>
+<!--EndFragment-->
+
+
+### Search mode
+Search mode (`Ctrl+R`) allows for searching through the history of commands.
+<!--StartFragment-->
+<pre><div><div><span>(reverse-i-search)`ls': ls -a        </span></div></div></pre>
+<!--EndFragment-->
 
 ## First steps
 
@@ -32,7 +54,7 @@ Now, that Julia and VS Code are up and running, `FEMLab.jl` can be initialized. 
 will download any dependencies defined in `Project.toml`.
 
 First, check that the project environment is activated. This can be done by entering the
-package mode (`]`, blue). It should read
+package mode (`]`). It should read
 
 ```julia-repl
 (FEMLab) pkg>
