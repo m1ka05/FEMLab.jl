@@ -1,5 +1,8 @@
 # FEMLab.jl
 
+Starter pack for students new to Julia who are using it to solve FEM assignments.
+
+
 ## Setup
 
 1. Install [Julia](https://julialang.org/downloads/)
@@ -9,9 +12,9 @@
     - by opening the command window (`Ctrl+Shift+P`) and searching for `Julia: Start REPL`; or
     - by pressing (`Alt+J`) followed by (`Alt+O`)
 
-!!! note
-    Visual Studio Code may ask about installing [`Revise.jl`](https://github.com/timholy/Revise.jl).
-    `Revise.jl` allows you to modify code and use the changes without restarting Julia. This is quite useful.
+> [!TIP]
+> Visual Studio Code may ask about installing [`Revise.jl`](https://github.com/timholy/Revise.jl).
+> `Revise.jl` allows you to modify code and use the changes without restarting Julia. This is quite useful.
 
 The `REPL` has five different prompt modes. The default mode (Julian, green) is where standard Julia expression can be evaluated.
 The special modes can be activated by pressing: `]`,`?`, `;`, or `Ctrl+R`. The default mode is reactivated by removing all
@@ -49,10 +52,10 @@ Then either enter `activate .` in the package mode, or press `Ctrl+Shift+P` and 
 (FEMLab) pkg>
 ```
 
-!!! note
-    The `FEMLab` environment must be activate if you want to use it! VS Code should
-    create a `.vscode/settings.json` with a path set for `julia.environmentPath`. This
-    should then be automatically activated whenever the directory is opened in VS Code.
+> [!IMPORTANT]
+> The `FEMLab` environment must be activate if you want to use it! VS Code should
+> create a `.vscode/settings.json` with a path set for `julia.environmentPath`. This
+> should then be automatically activated whenever the directory is opened in VS Code.
 
 To download all dependencies run
 ```
@@ -78,4 +81,3 @@ You can read up on the reason why `REPL.softscope` is necessary in this context
 Links to the documentation of Julia and the packages reexported by FEMLab are in `src/FEMLab.jl`.
 The output files (`*.vtu`,`*.vts`,...) can be opened in [Paraview](https://www.paraview.org/).
 The included packages are sufficient for the solution of all course assignments.
-
