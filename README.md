@@ -23,6 +23,8 @@ The `REPL` has five different prompt modes. The default mode (Julian, green) is 
 The special modes can be activated by pressing: `]`,`?`, `;`, or `Ctrl+R`. The default mode is reactivated by removing all
 input or by pressing `Ctrl+C`.
 
+![Default mode terminal listing](docs/readme_svgs/default-julia-function.svg)
+
 ### Package mode
 Package mode (`]`) allows, among others, for adding packages to the current environment.
 

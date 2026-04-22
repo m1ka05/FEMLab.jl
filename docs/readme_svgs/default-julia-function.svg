@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="318" height="248" viewBox="0 0 318 248" role="img" aria-label="Julia REPL listing">
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; font-size: 14px; fill: #e6edf3; }
+  </style>
+  <rect x="0.5" y="0.5" width="317" height="247" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <text x="16" y="28">
+    <tspan fill="#23D18B" font-weight="700">julia&gt;</tspan>
+    <tspan> A(r) = π * r^2</tspan>
+  </text>
+  <text x="16" y="48">
+    <tspan>A (generic function with 1 method)</tspan>
+  </text>
+  <text x="16" y="68">
+    <tspan></tspan>
+  </text>
+  <text x="16" y="88">
+    <tspan fill="#23D18B" font-weight="700">julia&gt;</tspan>
+    <tspan> A(1)</tspan>
+  </text>
+  <text x="16" y="108">
+    <tspan>3.141592653589793</tspan>
+  </text>
+  <text x="16" y="128">
+    <tspan></tspan>
+  </text>
+  <text x="16" y="148">
+    <tspan fill="#23D18B" font-weight="700">julia&gt;</tspan>
+    <tspan> A(π)</tspan>
+  </text>
+  <text x="16" y="168">
+    <tspan>31.006276680299816</tspan>
+  </text>
+  <text x="16" y="188">
+    <tspan></tspan>
+  </text>
+  <text x="16" y="208">
+    <tspan fill="#23D18B" font-weight="700">julia&gt;</tspan>
+    <tspan> cbrt(31) - π</tspan>
+  </text>
+  <text x="16" y="228">
+    <tspan>-0.0002120011984003689</tspan>
+  </text>
+</svg>
