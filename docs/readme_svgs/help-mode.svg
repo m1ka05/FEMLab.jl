@@ -1,73 +1,80 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="980" height="308" viewBox="0 0 980 308" role="img" aria-label="terminal listing">
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="308" viewBox="0 0 760 308" role="img" aria-label="help mode terminal listing">
+  <defs>
+    <clipPath id="clip-content">
+      <rect x="16" y="7.0" width="728" height="294" rx="0" />
+    </clipPath>
+  </defs>
   <style>
     text { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace; font-size: 14px; fill: #e6edf3; }
   </style>
-  <rect x="0.5" y="0.5" width="979" height="307" rx="6" fill="#0d1117" stroke="#30363d"/>
-  <text x="16" y="28">
-    <tspan fill="#E5E510" font-weight="700">help?&gt;</tspan>
-    <tspan> help</tspan>
-  </text>
-  <text x="16" y="48">
-    <tspan>search: </tspan>
-    <tspan font-weight="700">help</tspan>
-    <tspan> exp </tspan>
-    <tspan font-weight="700">he</tspan>
-    <tspan>x</tspan>
-  </text>
-  <text x="16" y="68">
-    <tspan></tspan>
-  </text>
-  <text x="16" y="88">
-    <tspan>  </tspan>
-    <tspan font-weight="700">Welcome to Julia 1.12.6.</tspan>
-    <tspan> The full manual is available at</tspan>
-  </text>
-  <text x="16" y="108">
-    <tspan></tspan>
-  </text>
-  <text x="16" y="128">
-    <tspan>  </tspan>
-    <tspan fill="#11A8CD">https://docs.julialang.org</tspan>
-  </text>
-  <text x="16" y="148">
-    <tspan></tspan>
-  </text>
-  <text x="16" y="168">
-    <tspan>  as well as many great tutorials and learning resources:</tspan>
-  </text>
-  <text x="16" y="188">
-    <tspan></tspan>
-  </text>
-  <text x="16" y="208">
-    <tspan>  </tspan>
-    <tspan fill="#11A8CD">https://julialang.org/learning/</tspan>
-  </text>
-  <text x="16" y="228">
-    <tspan></tspan>
-  </text>
-  <text x="16" y="248">
-    <tspan>  For help on a specific function or macro, type </tspan>
-    <tspan fill="#11A8CD">?</tspan>
-    <tspan> followed by its name, e.g. </tspan>
-    <tspan fill="#11A8CD">?cos</tspan>
-    <tspan>, or </tspan>
-    <tspan fill="#11A8CD">?@time</tspan>
-    <tspan>, and press enter. Type </tspan>
-    <tspan fill="#11A8CD">;</tspan>
-    <tspan> to enter shell mode, </tspan>
-    <tspan fill="#11A8CD">]</tspan>
-    <tspan> to enter package mode.</tspan>
-  </text>
-  <text x="16" y="268">
-    <tspan></tspan>
-  </text>
-  <text x="16" y="288">
-    <tspan>  To exit the interactive session, type </tspan>
-    <tspan fill="#11A8CD">CTRL-D</tspan>
-    <tspan> (press the control key together with the </tspan>
-    <tspan fill="#11A8CD">d</tspan>
-    <tspan> key), or type </tspan>
-    <tspan fill="#11A8CD">exit()</tspan>
-    <tspan>.</tspan>
-  </text>
+  <rect x="0.5" y="0.5" width="759" height="307" rx="6" fill="#0d1117" stroke="#30363d"/>
+  <g clip-path="url(#clip-content)">
+    <text x="16" y="28">
+      <tspan fill="#E5E510" font-weight="700">help?&gt;</tspan>
+      <tspan> help</tspan>
+    </text>
+    <text x="16" y="48">
+      <tspan>search: </tspan>
+      <tspan font-weight="700">help</tspan>
+      <tspan> exp </tspan>
+      <tspan font-weight="700">he</tspan>
+      <tspan>x</tspan>
+    </text>
+    <text x="16" y="68">
+      <tspan></tspan>
+    </text>
+    <text x="16" y="88">
+      <tspan>  </tspan>
+      <tspan font-weight="700">Welcome to Julia 1.12.6.</tspan>
+      <tspan> The full manual is available at</tspan>
+    </text>
+    <text x="16" y="108">
+      <tspan></tspan>
+    </text>
+    <text x="16" y="128">
+      <tspan>  </tspan>
+      <tspan fill="#11A8CD">https://docs.julialang.org</tspan>
+    </text>
+    <text x="16" y="148">
+      <tspan></tspan>
+    </text>
+    <text x="16" y="168">
+      <tspan>  as well as many great tutorials and learning resources:</tspan>
+    </text>
+    <text x="16" y="188">
+      <tspan></tspan>
+    </text>
+    <text x="16" y="208">
+      <tspan>  </tspan>
+      <tspan fill="#11A8CD">https://julialang.org/learning/</tspan>
+    </text>
+    <text x="16" y="228">
+      <tspan></tspan>
+    </text>
+    <text x="16" y="248">
+      <tspan>  For help on a specific function or macro, type </tspan>
+      <tspan fill="#11A8CD">?</tspan>
+      <tspan> followed by its name, e.g. </tspan>
+      <tspan fill="#11A8CD">?cos</tspan>
+      <tspan>, or </tspan>
+      <tspan fill="#11A8CD">?@time</tspan>
+      <tspan>, and press enter. Type </tspan>
+      <tspan fill="#11A8CD">;</tspan>
+      <tspan> to enter shell mode, </tspan>
+      <tspan fill="#11A8CD">]</tspan>
+      <tspan> to enter package mode.</tspan>
+    </text>
+    <text x="16" y="268">
+      <tspan></tspan>
+    </text>
+    <text x="16" y="288">
+      <tspan>  To exit the interactive session, type </tspan>
+      <tspan fill="#11A8CD">CTRL-D</tspan>
+      <tspan> (press the control key together with the </tspan>
+      <tspan fill="#11A8CD">d</tspan>
+      <tspan> key), or type </tspan>
+      <tspan fill="#11A8CD">exit()</tspan>
+      <tspan>.</tspan>
+    </text>
+  </g>
 </svg>
