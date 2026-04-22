@@ -54,7 +54,7 @@ Then either enter `activate .` in the package mode, or press `Ctrl+Shift+P` and 
 ```
 
 > [!IMPORTANT]
-> The `FEMLab` environment must be activate if you want to use it! VS Code should
+> The `FEMLab` environment must be active if you want to use it! VS Code should
 > create a `.vscode/settings.json` with a path set for `julia.environmentPath`. This
 > should then be automatically activated whenever the directory is opened in VS Code.
 
@@ -72,7 +72,7 @@ by pressing `Shift+Enter` in each line, or by selecting parts of the code and pr
 
 ```julia-repl
 julia> using REPL
-julia> include(REPL.softscope, "examples/dsm.jl")
+julia> include(REPL.softscope, "examples/airfoil_mesh.jl")
 ```
 
 You can read up on the reason why `REPL.softscope` is necessary in this context
