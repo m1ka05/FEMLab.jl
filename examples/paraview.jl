@@ -11,7 +11,7 @@ elements = [ 1  2  1
              2  3  3 ]
 
 # columns: element indices
-bar_youngs_modulus = [ 50, 50, 100 ]
+bar_youngs_modulus = [50, 50, 100]
 bar_area = [2, 1, 2*sqrt(2)]
 
 # number of nodes
@@ -21,7 +21,7 @@ nnodes = size(nodes, 2)
 nelems = size(elements, 2)
 
 # unstructured paraview output
-points = vcat(nodes, zeros(nnodes)') # adds third row with zero z-coordinate
+points = vcat(nodes, zeros(1, nnodes)) # adds third row with zero z-coordinate
 cells = [MeshCell(VTKCellTypes.VTK_LINE, elements[:, k]) for k in 1:nelem ]
 vtk_grid(joinpath("results", "unstructured_line_mesh"), points, cells) do vtk
     vtk["Young's modulus", VTKCellData()] = bar_youngs_modulus
@@ -56,7 +56,7 @@ nnodes = size(nodes, 2)
 nelems = size(elements, 2)
 
 # unstructured paraview output
-points = vcat(nodes, zeros(nnodes)') # adds third row with zero z-coordinate
+points = vcat(nodes, zeros(1, nnodes)) # adds third row with zero z-coordinate
 cells = [MeshCell(VTKCellTypes.VTK_LAGRANGE_QUADRILATERAL, elements[:, k]) for k in 1:nelems]
 vtk_grid(joinpath("results", "unstructured_quad_mesh"), points, cells) do vtk
     vtk["Coordinates"] = points
@@ -88,7 +88,7 @@ nnodes = size(nodes, 2)
 nelems = size(elements, 2)
 
 # unstructured paraview output
-points = vcat(nodes, zeros(nnodes)') # adds third row with zero z-coordinate
+points = vcat(nodes, zeros(1, nnodes)) # adds third row with zero z-coordinate
 cells = [MeshCell(VTKCellTypes.VTK_LAGRANGE_TRIANGLE, elements[:, k]) for k in 1:nelems]
 vtk_grid(joinpath("results", "unstructured_triangular_mesh"), points, cells) do vtk
     vtk["Coordinates", VTKPointData()] = points
