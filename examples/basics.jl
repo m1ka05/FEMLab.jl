@@ -83,7 +83,7 @@ o = (x,y,z) -> begin
     return sqrt(a + b + c)
 end
 
-# function composition (g points now to a new anonymous function)
+# function composition (r points now to a new anonymous function)
 r = (x,y) -> (g ∘ h)(x, y) # r(2,3) = (2^2 + 3^2)^2
 
 

@@ -24,7 +24,7 @@ nelems = size(elements, 2)
 
 # unstructured paraview output
 points = vcat(nodes, zeros(nnodes)') # adds third row with zero z-coordinate
-cells = [MeshCell(VTKCellTypes.VTK_LAGRANGE_QUADRILATERAL, elements[:, k]) for k in 1:nelems ]
+cells = [MeshCell(VTKCellTypes.VTK_LAGRANGE_QUADRILATERAL, elements[:, k]) for k in 1:nelems]
 vtk_grid(joinpath("results", "unstructured_quad_mesh"), points, cells) do vtk
     vtk["coordinates"] = points
     vtk["element_indices"] = 1:nelems
@@ -56,7 +56,7 @@ nelems = size(elements, 2)
 
 # unstructured paraview output
 points = vcat(nodes, zeros(nnodes)') # adds third row with zero z-coordinate
-cells = [MeshCell(VTKCellTypes.VTK_LAGRANGE_TRIANGLE, elements[:, k]) for k in 1:nelems ]
+cells = [MeshCell(VTKCellTypes.VTK_LAGRANGE_TRIANGLE, elements[:, k]) for k in 1:nelems]
 vtk_grid(joinpath("results", "unstructured_triangular_mesh"), points, cells) do vtk
     vtk["coordinates", VTKPointData()] = points
     vtk["element_indices", VTKCellData()] = 1:nelems
