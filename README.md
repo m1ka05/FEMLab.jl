@@ -25,28 +25,46 @@ input or by pressing `Ctrl+C`.
 
 ### Package mode
 Package mode (`]`) allows, among others, for adding packages to the current environment.
-<!--StartFragment-->
-<pre><div><div><span></span><span style='color: #2472c8; font-weight: bold;'>(@v1.12) pkg> </span><span>activate .                                                                                                                                                                                                          </span></div><div><span></span><span style='color: #0dbc79; font-weight: bold;'>  Activating</span><span> project at `/scratch/mika/FEMLab.jl`                                                                                                                                                                                 </span></div><div><span>                                                                                                                                                                                                                                  </span></div><div><span></span><span style='color: #2472c8; font-weight: bold;'>(FEMLab) pkg> </span><span>add LinearAlgebra                                                                                                                                                                                                   </span></div><div><span></span><span style='color: #0dbc79; font-weight: bold;'>   Resolving</span><span> package versions...                                                                                                                                                                                                  </span></div><div><span></span><span style='color: #0dbc79; font-weight: bold;'>      Compat</span><span> entries added for LinearAlgebra                                                                                                                                                                                      </span></div><div><span></span><span style='color: #0dbc79; font-weight: bold;'>    Updating</span><span> `/scratch/mika/FEMLab.jl/Project.toml`                                                                                                                                                                               </span></div><div><span>  </span><span style='color: #666666;'>[37e2e46d] </span><span style='color: #23d18b;'>+ LinearAlgebra v1.12.0</span><span>                                                                                                                                                                                              </span></div><div><span></span><span style='color: #11a8cd; font-weight: bold;'>    Manifest</span><span> No packages added to or removed from `/scratch/mika/FEMLab.jl/Manifest.toml`      </span></div></div></pre>
-<!--EndFragment-->
+
+<pre><span style="color:#2472C8;"><strong>(@v1.12) pkg&gt;</strong></span> activate .
+<span style="color:#0DBC79;"><strong>  Activating</strong></span> project at <code>/scratch/mika/FEMLab.jl</code>
+
+<span style="color:#2472C8;"><strong>(FEMLab) pkg&gt;</strong></span> add LinearAlgebra
+<span style="color:#0DBC79;"><strong>   Resolving</strong></span> package versions...
+<span style="color:#0DBC79;"><strong>      Compat</strong></span> entries added for LinearAlgebra
+<span style="color:#0DBC79;"><strong>    Updating</strong></span> <code>/scratch/mika/FEMLab.jl/Project.toml</code>
+  <span style="color:#666666;">[37e2e46d]</span> <span style="color:#23D18B;">+ LinearAlgebra v1.12.0</span>
+<span style="color:#11A8CD;"><strong>    Manifest</strong></span> No packages added to or removed from <code>/scratch/mika/FEMLab.jl/Manifest.toml</code></pre>
 
 ### Help mode
 Help mode (`?`) can be used to print help and documentation for anything entered in help mode.
-<!--StartFragment-->
-<pre><div><div><span></span><span style='color: #e5e510; font-weight: bold;'>help?> </span><span>help                                                                                                                                                                                         </span></div><div><span>search: </span><span style='font-weight: bold;'>help</span><span> exp </span><span style='font-weight: bold;'>he</span><span>x                                                                                                                                                                                </span></div><div><span>                                                                                                                                                                                                    </span></div><div><span>  </span><span style='font-weight: bold;'>Welcome to Julia 1.12.6.</span><span> The full manual is available at                                                                                                                                          </span></div><div><span>                                                                                                                                                                                                    </span></div><div><span>  </span><span style='color: #11a8cd;'>https://docs.julialang.org</span><span>                                                                                                                                                                        </span></div><div><span>                                                                                                                                                                                                    </span></div><div><span>  as well as many great tutorials and learning resources:                                                                                                                                           </span></div><div><span>                                                                                                                                                                                                    </span></div><div><span>  </span><span style='color: #11a8cd;'>https://julialang.org/learning/</span><span>                                                                                                                                                                   </span></div><div><span>                                                                                                                                                                                                    </span></div><div><span>  For help on a specific function or macro, type </span><span style='color: #11a8cd;'>?</span><span> followed by its name, e.g. </span><span style='color: #11a8cd;'>?cos</span><span>, or </span><span style='color: #11a8cd;'>?@time</span><span>, and press enter. Type </span><span style='color: #11a8cd;'>;</span><span> to enter shell mode, </span><span style='color: #11a8cd;'>]</span><span> to enter package mode.                                </span></div><div><span>                                                                                                                                                                                                    </span></div><div><span>  To exit the interactive session, type </span><span style='color: #11a8cd;'>CTRL-D</span><span> (press the control key together with the </span><span style='color: #11a8cd;'>d</span><span> key), or type </span><span style='color: #11a8cd;'>exit()</span><span>.    </span></div></div></pre>
-<!--EndFragment-->
+
+<pre><span style="color:#E5E510;"><strong>help?&gt;</strong></span> help
+search: <strong>help</strong> exp <strong>he</strong>x
+
+  <strong>Welcome to Julia 1.12.6.</strong> The full manual is available at
+
+  <span style="color:#11A8CD;">https://docs.julialang.org</span>
+
+  as well as many great tutorials and learning resources:
+
+  <span style="color:#11A8CD;">https://julialang.org/learning/</span>
+
+  For help on a specific function or macro, type <span style="color:#11A8CD;">?</span> followed by its name, e.g. <span style="color:#11A8CD;">?cos</span>, or <span style="color:#11A8CD;">?@time</span>, and press enter. Type <span style="color:#11A8CD;">;</span> to enter shell mode, <span style="color:#11A8CD;">]</span> to enter package mode.
+
+  To exit the interactive session, type <span style="color:#11A8CD;">CTRL-D</span> (press the control key together with the <span style="color:#11A8CD;">d</span> key), or type <span style="color:#11A8CD;">exit()</span>.</pre>
 
 ### Shell mode
 Shell mode (`;`) acts like a simple system shell.
-<!--StartFragment-->
-<pre><div><div><span></span><span style='color: #cd3131; font-weight: bold;'>shell> </span><span>ls                                                                                                                                                                                           </span></div><div><span>examples  LICENSE  Manifest.toml  noshare  Project.toml  README.md  repl.html  results  src  tests </span></div></div></pre>
-<!--EndFragment-->
 
+<pre><span style="color:#CD3131;"><strong>shell&gt;</strong></span> ls
+examples  LICENSE  Manifest.toml  noshare  Project.toml  README.md  repl.html  results  src  tests</pre>
 
 ### Search mode
 Search mode (`Ctrl+R`) allows for searching through the history of commands.
-<!--StartFragment-->
-<pre><div><div><span>(reverse-i-search)`ls': ls -a        </span></div></div></pre>
-<!--EndFragment-->
+
+<pre>(reverse-i-search)`ls`: ls -a</pre>
+
 
 ## First steps
 
