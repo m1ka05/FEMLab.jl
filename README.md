@@ -17,7 +17,7 @@ _`FEMLab.jl` → A starter pack for students who are new to Julia and want to us
 > Visual Studio Code may ask about installing [`Revise.jl`](https://github.com/timholy/Revise.jl).
 > `Revise.jl` allows you to modify code and use the changes without restarting Julia. This is quite useful.
 
-The `REPL` has five different prompt modes. The default mode (Julian, green) is where standard Julia expression can be evaluated.
+The `REPL` has five different prompt modes. The default mode (Julian, green) is where standard Julia expressions can be evaluated.
 The special modes can be activated by pressing: `]`,`?`, `;`, or `Ctrl+R`. The default mode is reactivated by removing all
 input or by pressing `Ctrl+C`.
 
