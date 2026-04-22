@@ -1,6 +1,6 @@
 # FEMLab.jl
 
-![airfoil mesh](examples/airfoil_mesh.png)
+![airfoil mesh](docs/airfoil_mesh.png)
 
 _`FEMLab.jl` → A starter pack for students who are new to Julia and want to use it to solve FEM assignments._
 
@@ -68,6 +68,7 @@ Then either enter `activate .` in the package mode, or press `Ctrl+Shift+P` and 
 > should then be automatically activated whenever the directory is opened in VS Code.
 
 To download all dependencies run
+
 ![Instantiate packages in the FEMLab environment](docs/readme_svgs/instantiate.svg)
 
 ## Next steps
