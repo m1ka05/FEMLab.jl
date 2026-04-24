@@ -27,7 +27,7 @@ display(v)
 c = (1, 2, 3)
 
 # tuples are not mutable
-c[1] = 0 # this is not legal!
+#c[1] = 0 # this is not legal!
 
 # defining a matrix
 A = [1 2 3; 4 5 6; 7 8 9]
@@ -129,4 +129,4 @@ c = Circle(π)
 
 Ar = area(r)
 As = area(s)
-Ac = area(c) # not implemented, so method in line 106 is called
+#Ac = area(c) # not implemented, so error method in line 106 is called
