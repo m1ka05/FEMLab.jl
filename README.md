@@ -4,6 +4,8 @@
 
 _`FEMLab.jl` → A starter pack for students who are new to Julia and want to use it to solve FEM assignments._
 
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/m1ka05/FEMLab.jl/tree/main)
+
 ## Setup
 
 1. Install [Julia](https://julialang.org/downloads/)

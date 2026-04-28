@@ -1,13 +1,11 @@
 {
   "name": "FEMLab.jl Codespace",
-
   "image": "julia:1.12-bookworm",
-
   "containerEnv": {
     "JULIA_PROJECT": "${containerWorkspaceFolder}",
+    "JULIA_DEPOT_PATH": "${containerWorkspaceFolder}/.julia-depot:",
     "JULIA_NUM_THREADS": "auto"
   },
-
   "customizations": {
     "vscode": {
       "extensions": [
@@ -19,12 +17,12 @@
         "terminal.integrated.defaultProfile.linux": "bash",
         "terminal.integrated.env.linux": {
           "JULIA_PROJECT": "${containerWorkspaceFolder}",
+          "JULIA_DEPOT_PATH": "${containerWorkspaceFolder}/.julia-depot:",
           "JULIA_NUM_THREADS": "auto"
         }
       }
     }
   },
-
-  "updateContentCommand": "julia --startup-file=no --project=${containerWorkspaceFolder} -e 'using Pkg; Pkg.instantiate(); Pkg.precompile(); using FEMLab; println(\"FEMLab prebuild ready.\")'",
+  "updateContentCommand": "mkdir -p ${containerWorkspaceFolder}/.julia-depot && julia --startup-file=no --project=${containerWorkspaceFolder} -e 'using Pkg; println(\"DEPOT_PATH = \", DEPOT_PATH); Pkg.instantiate(); Pkg.precompile(); using FEMLab; println(\"First FEMLab load completed during prebuild.\"); using FEMLab, LinearAlgebra, SparseArrays; println(\"FEMLab prebuild ready.\")'",
   "postAttachCommand": "echo 'FEMLab.jl Codespace ready. Julia project: ${containerWorkspaceFolder}'"
 }
