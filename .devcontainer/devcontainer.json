@@ -1,0 +1,29 @@
+{
+  "name": "FEMLab.jl Codespace",
+
+  "image": "julia:1.12-bookworm",
+
+  "containerEnv": {
+    "JULIA_PROJECT": "@.",
+    "JULIA_NUM_THREADS": "auto"
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "julialang.language-julia"
+      ],
+      "settings": {
+        "julia.environmentPath": "${containerWorkspaceFolder}",
+        "julia.executablePath": "/usr/local/julia/bin/julia",
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "terminal.integrated.env.linux": {
+          "JULIA_PROJECT": "@.",
+          "JULIA_NUM_THREADS": "auto"
+        }
+      }
+    }
+  },
+
+  "postCreateCommand": "julia --project=. -e 'using Pkg; Pkg.instantiate(); Pkg.precompile(); using FEMLab; println(\"FEMLab Codespace ready.\")'"
+}
