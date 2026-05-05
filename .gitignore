@@ -1,3 +1,4 @@
 Manifest.toml
 noshare/
 .vscode/
+.DS_store
