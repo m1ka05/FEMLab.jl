@@ -67,7 +67,7 @@ x(r,θ) = r * cos(θ)
 y(r,θ) = r * sin(θ)
 
 # define partition in parametric domain
-δ = 10
+δ = 4
 r = LinRange(1, 2, 2^δ)
 θ = LinRange(0, π/2, 2^δ)
 
