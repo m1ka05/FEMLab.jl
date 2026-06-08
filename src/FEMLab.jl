@@ -51,6 +51,7 @@ using Reexport
 
 
 include("preconditioners.jl")
+include("quadrature.jl")
 
 
 end # module FEMLab
