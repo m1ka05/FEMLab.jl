@@ -247,7 +247,6 @@ end
 
 
 # plot l2 errors
-using Plots, LaTeXStrings
 N = (2 .^ (1:10)) .^ 2
 l2err = [
     0.8823939105039833,

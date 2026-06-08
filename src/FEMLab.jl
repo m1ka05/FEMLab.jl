@@ -46,7 +46,7 @@ using Reexport
 @reexport using Krylov, KrylovPreconditioners, ILUZero, LDLFactorizations, LimitedLDLFactorizations
 @reexport using FastGaussQuadrature 
 @reexport using ForwardDiff, StaticArrays
-@reexport using Plots
+@reexport using Plots, LaTeXStrings
 @reexport using ReTestItems
 
 
